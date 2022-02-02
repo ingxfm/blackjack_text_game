@@ -1,6 +1,6 @@
 from os import system, name
 from art import logo
-import random
+from random import choice
 
 def clear():
     '''    Clears the screen.    '''
@@ -11,9 +11,8 @@ def clear():
 
 def deal_card():
     '''    Return a random card from an argument of list datatype.    '''
-    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-    card = random.choice(cards)    
-    return card
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]    
+    return choice(cards)
 
 def add_scores(player_card_list):
     '''    Add upp the values in a hand: list datatype.    '''
